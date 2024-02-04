@@ -19,11 +19,6 @@ const Giangvientruong = () => {
     };
 
     const handleAddGiangVien = () => {
-        // Implement the logic to add the professor here
-        // You can get the values from the form fields
-        // and perform necessary actions
-
-        // For demonstration purposes, showing success dialog after 1 second
         setShowSuccessDialog(true);
         setTimeout(() => {
             setShowSuccessDialog(false);
@@ -32,7 +27,6 @@ const Giangvientruong = () => {
     };
 
     useEffect(() => {
-        // Clean up the success dialog after it's closed
         return () => {
             setShowSuccessDialog(false);
         };
@@ -58,7 +52,6 @@ const Giangvientruong = () => {
                 ))}
             </ul>
 
-            {/* Dialog Thêm giảng viên */}
             {isDialogOpen && (
                 <div className='dialog'>
                     <label>Họ và tên:</label>
@@ -89,7 +82,6 @@ const Giangvientruong = () => {
                     <button onClick={handleCloseDialog}>Hủy</button>
                 </div>
             )}
-            {/* Success Dialog */}
             {showSuccessDialog && (
                 <div className='success-dialog'>
                     Thêm giảng viên thành công!
