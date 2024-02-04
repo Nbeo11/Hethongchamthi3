@@ -1,0 +1,79 @@
+[
+    {
+        "userId": 1,
+        "id": 1,
+        "name": "Nguyen Thi A",
+        "dateofbirth": "20-1-2000",
+        "sex": "Nữ",
+        "class": "74DCHT21",
+        "start": "",
+        "end": " ",
+        "status": "Đã chấm"
+    },
+    {
+        "userId": 1,
+        "id": 2,
+        "name": "Nguyen Thi B",
+        "dateofbirth": "20-1-2000",
+        "sex": "Nữ",
+        "class": "74DCHT21",
+        "start": "",
+        "end": " ",
+        "status": "Đã chấm"
+    },
+    {
+        "userId": 1,
+        "id": 3,
+        "name": "Nguyen Thi C",
+        "dateofbirth": "20-1-2000",
+        "sex": "Nữ",
+        "class": "74DCHT21",
+        "start": "",
+        "end": " ",
+        "status": "Đã chấm"
+    },
+    {
+        "userId": 1,
+        "id": 4,
+        "name": "Nguyen Thi D",
+        "dateofbirth": "20-1-2000",
+        "sex": "Nữ",
+        "class": "74DCHT21",
+        "start": "",
+        "end": " ",
+        "status": "Đã chấm"
+    },
+    {
+        "userId": 1,
+        "id": 6,
+        "name": "Nguyen Thi E",
+        "dateofbirth": "20-1-2000",
+        "sex": "Nữ",
+        "class": "74DCHT21",
+        "start": "",
+        "end": " ",
+        "status": "Đã chấm"
+    },
+    {
+        "userId": 1,
+        "id": 7,
+        "name": "Nguyen Thi F",
+        "dateofbirth": "20-1-2000",
+        "sex": "Nữ",
+        "class": "74DCHT21",
+        "start": "",
+        "end": " ",
+        "status": "Đã chấm"
+    },
+    {
+        "userId": 1,
+        "id": 8,
+        "name": "Nguyen Thi G",
+        "dateofbirth": "20-1-2000",
+        "sex": "Nữ",
+        "class": "74DCHT21",
+        "start": "",
+        "end": " ",
+        "status": "Chưa chấm"
+    }
+]

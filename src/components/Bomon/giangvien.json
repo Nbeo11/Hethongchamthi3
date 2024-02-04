@@ -1,0 +1,28 @@
+[
+    {
+        "userId": 1,
+        "id": 1,
+        "name": "Nguyễn Văn A",
+        "Email": "nguyena@gmail.com",
+        "class": "70DCTT21",
+        "type": "Trắc nghiệm",
+        "role": "Chủ trì"
+    },
+    {
+        "userId": 1,
+        "id": 2,
+        "name": "Nguyễn Văn B",
+        "Email": "nguyenb@gmail.com",
+        "class": "70DCTT22",
+        "type": "Trắc nghiệm",
+        "role": "Hỗ trợ"
+    },{
+        "userId": 1,
+        "id": 3,
+        "name": "Nguyễn Văn C",
+        "Email": "nguyenc@gmail.com",
+        "class": "70DCTT23",
+        "type": "Trắc nghiệm",
+        "role": "Hỗ trợ"
+    }
+]

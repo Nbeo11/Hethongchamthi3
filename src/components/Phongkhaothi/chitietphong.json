@@ -1,0 +1,22 @@
+[
+    {
+        "userId": 1,
+        "id": 1,
+        "subject": "Nhập môn lập trình",
+        "class": "74DCHT21",
+        "room": "A1_101"
+    },
+    {
+        "userId": 1,
+        "id": 2,
+        "subject": "Lập trình nâng cao",
+        "class": "74DCHT22",
+        "room": "A1_102"
+    },{
+        "userId": 1,
+        "id": 3,
+        "subject": "Lập trình hướng đối tượng",
+        "class": "74DCHT23",
+        "room": "A1_102"
+    }
+]

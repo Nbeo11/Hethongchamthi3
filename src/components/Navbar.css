@@ -1,0 +1,83 @@
+/* HocPhan.css */
+
+/* Danh sách hiển thị dọc */
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+.list {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0;
+    background-color: #fff; /* Màu nền trắng cho danh sách */
+    display: flex;
+    flex-direction: column; /* Xếp theo hàng dọc */
+    margin-left: 30px;
+}
+
+/* Mỗi mục trong danh sách */
+.list-item {
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng màu và hiệu ứng màu văn bản */
+}
+
+/* Hiệu ứng màu khi di chuột vào */
+.list-item:hover {
+    font-weight: 1000;
+    color: #000000; /* Đổi màu văn bản thành màu đậm hơn khi di chuột vào */
+}
+a {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: black; /* Đổi màu văn bản thành đen */
+}
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    width: 300px;
+}
+
+.dialog label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.dialog input,
+.dialog select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+.dialog button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dialog button:hover {
+    background-color: #45a049;
+}
+.dialog input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.dialog label.checkbox {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.dialog label.checkbox input {
+    margin-right: 8px;
+}
