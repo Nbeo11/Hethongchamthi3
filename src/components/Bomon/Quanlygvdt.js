@@ -2,7 +2,6 @@ import React from 'react';
 import '../Navbar.css';
 
 const Quanlygvdt = () => {
-    // Danh sách môn học
     const hocPhanList = [
         'Tạo đề thi',
         'Giảng viên tạo bộ câu hỏi',
