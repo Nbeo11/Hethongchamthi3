@@ -57,11 +57,7 @@ const Khoahoc = () => {
     return (
         <div>
             <h2 className='title'>Các khóa học</h2>
-
-            {/* Button Thêm khóa học */}
             <button onClick={handleOpenDialog} className='buttonadd'>Thêm khóa học</button>
-
-            {/* Danh sách môn học */}
             <ul className='list'>
                 {khoaHocList.map((khoaHoc, index) => (
                     <li className='list-item' key={index}>
@@ -75,8 +71,6 @@ const Khoahoc = () => {
                     </li>
                 ))}
             </ul>
-
-            {/* Dialog Thêm khóa học */}
             {isDialogOpen && (
                 <div className='dialog'>
                     <input
@@ -94,7 +88,6 @@ const Khoahoc = () => {
                         <option value='CNTT'>CNTT</option>
                         <option value='KT'>KT</option>
                         <option value='NN'>NN</option>
-                        {/* Thêm các option khác nếu cần */}
                     </select>
                     <label htmlFor='chuyenNganh'>Chuyên ngành:</label>
                     <select
@@ -107,7 +100,6 @@ const Khoahoc = () => {
                         <option value='XD'>XD</option>
                         <option value='QS'>QS</option>
                         <option value='NNM'>NNM</option>
-                        {/* Thêm các option khác nếu cần */}
                     </select>
                     <label htmlFor='soLop'>Số lớp:</label>
                     <input
