@@ -2,13 +2,11 @@ import React from 'react';
 import '../Navbar.css';
 
 const Chamthi = () => {
-    // Danh sách môn học
     const hocPhanList = [
         'Nhập môn lập trình (2023_int123)',
         'Lập trình hướng đối tượng (2023_int1234)',
     ];
     const handleSubjectClick = (monHoc) => {
-        // Save the selected subject to localStorage
         localStorage.setItem('selectedSubject', monHoc);
     };
 
