@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../Navbar.css';
 import '../css/style.css';
-import giangVienData from './giangvien.json'; // Import file JSON
+import giangVienData from './giangvien.json'; 
 
 const GvCoihoithi = () => {
     const [giangVienList, setGiangVienList] = useState([]);
@@ -19,7 +19,7 @@ const GvCoihoithi = () => {
     const [isDeleteConfirmationOpen, setIsDeleteConfirmationOpen] = useState(false);
 
     useEffect(() => {
-        // Dùng dữ liệu từ file JSON thay vì fetch
+        
         try {
             setGiangVienList(giangVienData);
         } catch (error) {
@@ -33,7 +33,6 @@ const GvCoihoithi = () => {
 
     const closeAddPopup = () => {
         setIsAddPopupOpen(false);
-        // Reset giá trị của newGiangVien khi đóng popup
         setNewGiangVien({
             id: '',
             name: '',
@@ -44,23 +43,18 @@ const GvCoihoithi = () => {
     };
 
     const handleAddGiangVien = () => {
-        // Thực hiện thêm giảng viên vào danh sách
-        // Để đơn giản, ở đây ta giả sử id là timestamp để đảm bảo duy nhất
         const newGiangVienWithId = { ...newGiangVien, id: Date.now() };
         setGiangVienList([...giangVienList, newGiangVienWithId]);
         closeAddPopup();
     };
 
     const handleEdit = (giangVien) => {
-        // Mở popup sửa và set giangVien được chọn
-        setSelectedGiangVienId(giangVien);
+       setSelectedGiangVienId(giangVien);
         setIsEditPopupOpen(true);
     };
 
     const handleDelete = (id) => {
-        // Mở dialog xác nhận
         openDeleteConfirmation();
-        // Lưu lại giảng viên được chọn để xóa
         setSelectedGiangVienId(id);
     };
 
@@ -73,10 +67,8 @@ const GvCoihoithi = () => {
         setIsDeleteConfirmationOpen(false);
     };
     const handleConfirmDelete = () => {
-        // Thực hiện xóa giảng viên từ danh sách
-        const updatedList = giangVienList.filter((giangVien) => giangVien.id !== selectedGiangVienId);
+       const updatedList = giangVienList.filter((giangVien) => giangVien.id !== selectedGiangVienId);
         setGiangVienList(updatedList);
-        // Đóng dialog xác nhận
         closeDeleteConfirmation();
     };
 
@@ -101,7 +93,7 @@ const GvCoihoithi = () => {
                         <th>Email</th>
                         <th>Lớp</th>
                         <th>Hình thức thi</th>
-                        <th>Hành động</th> {/* Thêm cột hành động */}
+                        <th>Hành động</th> 
                     </tr>
                 </thead>
                 <tbody>
@@ -113,7 +105,6 @@ const GvCoihoithi = () => {
                             <td>{giangVien.class}</td>
                             <td>{giangVien.type}</td>
                             <td>
-                                {/* Nút sửa và xóa */}
                                 <button onClick={() => handleEdit(giangVien)}>Sửa</button>
                                 <button onClick={() => handleDelete(giangVien.id)}>Xóa</button>
                             </td>
@@ -126,7 +117,6 @@ const GvCoihoithi = () => {
                 <div>
                     <div className="overlay"></div>
                     <div className="popup">
-                        {/* Nội dung popup thêm mới */}
                         <h3>Thêm thông tin giảng viên</h3>
                         <label htmlFor="newId">ID:</label>
                         <input
@@ -189,11 +179,9 @@ const GvCoihoithi = () => {
                 <div>
                     <div className="overlay"></div>
                     <div className="popup">
-                        {/* Nội dung popup sửa */}
                         <h3>Sửa thông tin giảng viên</h3>
                         <p>ID: {selectedGiangVienId.id}</p>
                         <p>Tên: {selectedGiangVienId.name}</p>
-                        {/* Các trường thông tin khác */}
                         <button onClick={() => setIsEditPopupOpen(false)}>Đóng</button>
                     </div>
                 </div>
