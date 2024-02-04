@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../Navbar.css';
 import '../css/style.css';
-import giangVienData from './giangvien.json'; // Import file JSON
+import giangVienData from './giangvien.json'; 
 
 const GvChamthi = () => {
     const [giangVienList, setGiangVienList] = useState([]);
@@ -19,7 +19,6 @@ const GvChamthi = () => {
     const [isDeleteConfirmationOpen, setIsDeleteConfirmationOpen] = useState(false);
 
     useEffect(() => {
-        // Dùng dữ liệu từ file JSON thay vì fetch
         try {
             setGiangVienList(giangVienData);
         } catch (error) {
@@ -33,7 +32,6 @@ const GvChamthi = () => {
 
     const closeAddPopup = () => {
         setIsAddPopupOpen(false);
-        // Reset giá trị của newGiangVien khi đóng popup
         setNewGiangVien({
             id: '',
             name: '',
@@ -101,7 +99,7 @@ const GvChamthi = () => {
                         <th>Email</th>
                         <th>Lớp</th>
                         <th>Hình thức thi</th>
-                        <th>Hành động</th> {/* Thêm cột hành động */}
+                        <th>Hành động</th> 
                     </tr>
                 </thead>
                 <tbody>
@@ -113,7 +111,7 @@ const GvChamthi = () => {
                             <td>{giangVien.class}</td>
                             <td>{giangVien.type}</td>
                             <td>
-                                {/* Nút sửa và xóa */}
+                                
                                 <button onClick={() => handleEdit(giangVien)}>Sửa</button>
                                 <button onClick={() => handleDelete(giangVien.id)}>Xóa</button>
                             </td>
@@ -126,7 +124,7 @@ const GvChamthi = () => {
                 <div>
                     <div className="overlay"></div>
                     <div className="popup">
-                        {/* Nội dung popup thêm mới */}
+                       
                         <h3>Thêm thông tin giảng viên</h3>
                         <label htmlFor="newId">ID:</label>
                         <input
@@ -189,11 +187,10 @@ const GvChamthi = () => {
                 <div>
                     <div className="overlay"></div>
                     <div className="popup">
-                        {/* Nội dung popup sửa */}
                         <h3>Sửa thông tin giảng viên</h3>
                         <p>ID: {selectedGiangVienId.id}</p>
                         <p>Tên: {selectedGiangVienId.name}</p>
-                        {/* Các trường thông tin khác */}
+                        
                         <button onClick={() => setIsEditPopupOpen(false)}>Đóng</button>
                     </div>
                 </div>
